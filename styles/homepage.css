@@ -1,0 +1,60 @@
+.backdrop-home {
+    background-image: url('classroom.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+
+    position: fixed;
+    height: 100%;
+    left: 0%;
+    right: 0%;
+    width: 100%;
+    text-align: center;
+}
+
+.welcome-container {
+  width: 100%;
+  padding: 160px 0px;
+  display: flex;
+  justify-content: center; 
+}
+
+.blackboard {
+  background-color: #497959;
+  background-image: url('chalkboard.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: inline-block;
+  padding: 90px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgb(0, 0, 0);
+  font-size: large;
+  border: solid;
+  border-width: 10px;
+  border-color:#553838;
+}
+
+.welcome-msg {
+    text-align: center;
+    color:white;
+
+}
+
+.button {
+    padding: 20px 60px;
+    background-color: #a07878;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    margin: 0px 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.buttons a:hover {
+    background-color: #775f5f;
+}

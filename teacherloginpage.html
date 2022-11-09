@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="styles/login.css" />
+  <link rel="stylesheet" href="styles/default.css">
+  <meta charset="utf-8" />
+  <title>Teacher Login Page</title>
+</head>
+
+<body class="backdrop-teacher">
+  <header class="banner">
+    <a href="homepage.html">
+      <img src="styles/stoodle-logo.png" class="logo" alt="Stoodle Logo"></a>
+    <ul class="banner-info">
+      <li><a href="AboutUs.html">About Us</a></li>
+      <li><a href="Support.html">Support</a></li>
+    </ul>
+  </header>
+
+  <div class="login-container">
+
+    <form class="login" id="login">
+      <img src="styles/stoodle-icon.png" class="icon" alt="Stoodle Icon">
+      <span class="login-title">
+        <h3>Stoodle Teacher Login</h3>
+      </span>
+      <div class="inputs">
+        <p class="formHidden" id="loginErrorMassage">Incorrect username/password</p>
+        <input type="text" autofocus placeholder="Username" id="username">
+      </div>
+      <div class="inputs">
+        <input type="password" placeholder="Password" id="password">
+      </div>
+      <div class="submit-button-container">
+        <input type="submit" value="LOGIN" class="submit-button" id="submit" onclick="validate()">
+      </div>
+      <div class="links" id="linkCreateAccount"> Forgot your <a href="">username/password</a>? <br>
+        <a href="">Sign up</a>
+      </div>
+    </form>
+
+    <form class="login formHidden" id="createAccount">
+      <img src="styles/stoodle-icon.png" class="icon" alt="Stoodle Icon">
+      <span class="login-title">
+        <h3>Create Account</h3>
+      </span>
+      <div class="inputs">
+        <input type="text" placeholder="Name" id="name">
+      </div>
+      <div class="inputs">
+        <input type="text" placeholder="Username" id="createUsername">
+      </div>
+      <div class="inputs">
+        <input type="text" placeholder="Email" id="email">
+      </div>
+      <div class="inputs">
+        <input type="password" placeholder="Password" id="createPassword">
+      </div>
+      <div class="submit-button-container">
+        <input type="submit" value="SUBMIT" class="submit-button" id="post">
+      </div>
+      <div class="links" id="linkLogin"> Already have an account? <br>
+        <a href="">Sign in</a>
+      </div>
+    </form>
+
+  </div>
+  <script src="script/teacherLogin.js"></script>
+
+
+</body>
+
+</html>

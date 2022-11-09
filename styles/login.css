@@ -1,0 +1,120 @@
+* {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+html {
+  min-height: 100%;
+}
+
+#loginErrorMassage {
+  font-size: medium;
+  color: red;
+}
+
+.backdrop-teacher {
+  background-image: url("library.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: center;
+  height: 100%;
+  margin: 0;
+}
+
+.backdrop-student {
+  background-image: url("study.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: center;
+  height: 100%;
+  margin: 0%;
+}
+
+.login-container {
+  width: 100%;
+  padding: 70px 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.login {
+  text-align: center;
+  display: inline-block;
+  background-color: white;
+  padding: 100px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 15px rgb(67, 67, 67);
+  font-size: large;
+}
+
+.login-title {
+  white-space: nowrap;
+}
+
+input {
+  padding: 10px 10px;
+  border-radius: 10px;
+  border-color: transparent;
+  background-color: rgb(232, 232, 232);
+  display: inline-block;
+}
+
+.inputs {
+  padding: 5px;
+}
+
+.submit-button-container {
+  padding: 10px;
+}
+
+.submit-button {
+  padding: 7px 30px;
+  font-size: large;
+  background-color: rgb(56, 203, 56);
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.submit-button:hover {
+  cursor: pointer;
+  background-color: rgb(35, 156, 35);
+}
+
+.links {
+  font-size: small;
+  color: rgb(48, 48, 48);
+  white-space: nowrap;
+  padding: 10px 0px 0px 0px;
+}
+
+.logo {
+  width: 200px;
+  vertical-align: middle;
+  position: relative;
+  padding: 1px 1px;
+}
+
+.icon {
+  width: 120px;
+  height: auto;
+}
+
+.banner {
+  border: 5px;
+  background-color: rgb(255, 255, 255);
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  top: 0px;
+  min-height: 40px;
+  width: 100%;
+  border-bottom: solid;
+  border-color: transparent;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 15px rgb(67, 67, 67);
+}
+
+.formHidden {
+  display: none;
+}

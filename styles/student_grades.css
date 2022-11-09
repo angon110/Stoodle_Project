@@ -1,0 +1,115 @@
+.logo {
+    padding-left: 5%;
+    width: 15%;
+    vertical-align: middle;
+    opacity: 0.96;
+}
+
+.banner {
+    border: 5px;
+    background-color: whitesmoke;
+    text-align: left;
+}
+
+.gradeh1 {
+    float: right;
+}
+
+h2,
+h3 {
+    position: relative;
+    left: 20%;
+}
+
+body {
+    background-color: #F1FFF1;
+}
+
+
+table {
+    background-color: white;
+    border: 2px solid black;
+    border-collapse: collapse;
+    border-radius: 10px;
+    text-align: center;
+    width: 1000px;
+}
+
+.t1 {
+    background-color: #F1FFF1;
+    border: 0px;
+    border-collapse: collapse;
+}
+
+td {
+    background-color: aquamarine;
+    padding: 10px;
+}
+
+.teacher_comment {
+    background-color: white;
+    border-left: 0px;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    padding: 10px;
+}
+
+.category {
+    font-size: 24px;
+    text-align: left;
+}
+
+.category_info {
+    border: 0px;
+    font-size: 14px;
+    text-align: left;
+}
+
+.assessment {
+    border-bottom: 0px;
+    border-top: 0px;
+    font-size: 20px;
+}
+
+nav {
+    position: fixed;
+    left: 0%;
+    height: 85%;
+    width: 15%;
+    padding-top: 3%;
+    background-color: #FFF8EA;
+    border-right: solid;
+}
+
+nav a {
+    display: block;
+    padding-left: 2%;
+    margin-bottom: 15%;
+    color: #594545;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: underline;
+    font-size: 22px;
+    transition: opacity 0.15s;
+}
+
+nav a:hover {
+    opacity: 0.7;
+}
+
+.div_info {
+    position: relative;
+    left: 20%;
+}
+
+.stat {
+    font-size: 20px;
+}
+
+.h_center {
+    position: relative;
+    left: 2%;
+    text-align: center;
+}

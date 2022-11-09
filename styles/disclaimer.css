@@ -1,0 +1,12 @@
+
+.dis_content {
+    position: fixed;
+    background-image:url(disbg.png);
+    background-position:center;
+    background-size:100%;
+    background-repeat:no-repeat;
+    top:9.3%;
+    height:100%;
+    width:100%;
+    text-align: center;
+}
