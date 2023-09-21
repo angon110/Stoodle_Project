@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <link rel="stylesheet" href="styles/contact_info.css" />
+    <link rel="stylesheet" href="styles/default.css">
+    <meta charset="utf-8">
+    <title>Contact Details</title>
+</head>
+
+<body>
+    <header class="banner">
+        <a href="index.html"><img src="styles/stoodle-logo.png" class="logo"></a>
+        <div class="banner-title">Contact Info</div>
+        <ul class="banner-info">
+            <li><a href="AboutUs.html">About Us</a></li>
+            <li><a href="Support.html">Support</a></li>
+        </ul>
+    </header>
+
+    <nav>
+        <a href="teachers.html" id="dashboard">Dashboard</a>
+        <a href="participant.php">Student List </a>
+        <a href="tgrades.php">Input Grades</a>
+        <a href="tcontact_info.html">Contact Info</a>
+    </nav>
+
+    <div class="content">
+        <form method = "edit" name="edit_info" >
+            <h2><U>To publish your contact details:</U></h2>
+
+
+            <label><b>Your name: </b></label>
+            <input type="text" placeholder="full name"  id="iname"  name="iname">
+            <br><br>
+
+            <label><b>Lecture Section: </b></label>
+            <input type="text" placeholder="section" id="section" name="section">
+            <br><br>
+
+            <label><b>Course Name: </b></label>
+            <input type="text" placeholder="Course-Code"  id="course" name="course">
+            <br><br>
+
+            <label><b>Your Email:</b></label>
+            <input type="email" placeholder="example@email.com" name="email" id="instructor_email" onchange="checkEmail()">
+            <br><br>
+        
+            <label><b>Office hours (Day):</b></label>
+            <input type="radio" name="days" id = "Mon" value="Mon" >MON
+            <input type="radio" name="days" id = "Tue" value="Tue" >TUE
+            <input type="radio" name="days" id = "Wed" value="Wed" >WED
+            <input type="radio" name="days" id = "Thu" value="Thu" >THU
+            <input type="radio" name="days" id = "Fri" value="Fri" >FRI
+            <input type="radio" name="days" id = "Sat" value="Sat" >SAT
+            <input type="radio" name="days" id = "Sun" value="Sun" >SUN
+            <br><br>
+
+            <label><b>Office hours (Time): </b></label>
+            <input type="time" placeholder="from" id="time_from" name="hours" min="08:00" max="23:00" required>
+            <label>-</label>
+            <input type="time" placeholder="to" id="time_to" name="hours" min="08:00" max="23:00" required>
+            <br><br>
+
+            <input type="button" name="add" id="add-button" value="Add" onclick="check_add_info();">
+            <input type="reset"id="reset-button" name="reset">
+
+            <h2><U>Your Current contact details are:</U></h2>
+
+                    <table id = "tbl">
+                        <thead>
+                            <th> Instructor </th>
+                            <th> Section </th>
+                            <th> Course </th>
+                            <th> Contact </th>
+                            <th> Office hours (Day)</th>
+                            <th> Office hours (Time)</th>
+                        </thead>
+                        <tbody>
+                            
+                        </tbody>
+            
+                    </table>
+
+
+
+        </form>
+        <script src="script/tcontact_info.js"></script>
+    </div>
+
+    
+</body>
+
+</html>

@@ -1,3 +1,15 @@
+<?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+include("methods.php");
+$method = new method();
+        if(isset($_POST['submit']))
+        {
+               $method->upload2($_FILES['file']);
+        }
+?>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
@@ -20,24 +32,27 @@
 
     <nav>
         <a href="teachers.html" id="dashboard">Dashboard</a>
-        <a href="participant.html">Student List </a>
-        <a href="tgrades.html">Input Grades</a>
+        <a href="participant.php">Student List </a>
+        <a href="tgrades.php">Input Grades</a>
         <a href="tcontact_info.html">Contact Info</a>
     </nav>
 
+
     <div class="content">
-        <h2>Upload documents like assignments & slides here:</h2>
+        <h2>Upload documents assignments & slides here:</h2>
         <div class="fileupload-container">
-        <label class="fileupload">
-            <input type="file" />
-        </label>
-        <input type="submit" value="Upload" id="uploadButton">
+        
+        <form class="" action="upload.php" method="post" enctype="multipart/form-data">
+        <label for="">Choose Your PDF File</label><br>
+        <input id="pdf" type="file" name="file" value="" required><br><br>
+        <input id="upload" type="submit" name="submit" value="Upload">
+
+
+        </div>
     </div>
 
-        <h2> IN CONSTRUCTION : WORK IN PROGRESS!!</h2>
-    </div>
+   
 
-    <script src="script/fileUpload.js"></script>
 
 </body>
 
